@@ -6,10 +6,11 @@
     <meta name="theme-color" content="#2b145f">
     <meta
       name="description"
-      content="Privacy information and support resources for the Delta Pi Hub mobile app."
+      content="Delta Pi Hub app information, internal preview screenshots, privacy policy, support, and related projects by Javonn Liner."
     >
-    <title>Delta Pi Hub — Privacy &amp; Support</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <title>Delta Pi Hub — App Preview, Privacy &amp; Support</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -19,30 +20,88 @@
       <header class="hero">
         <nav class="nav-shell" aria-label="Page sections">
           <a class="brand" href="#top" aria-label="Delta Pi Hub home">
-            <span class="brand-mark" aria-hidden="true">ΔΠ</span>
+            <img class="brand-logo" src="assets/delta-pi/icon.png" width="52" height="52" alt="" aria-hidden="true">
             <span>Delta Pi Hub</span>
           </a>
           <div class="nav-links">
+            <a href="#gallery">Preview</a>
+            <a href="#projects">Projects</a>
             <a href="#privacy">Privacy</a>
             <a href="#support">Support</a>
           </div>
         </nav>
 
         <section class="hero-copy" id="top" aria-labelledby="page-title">
-          <p class="eyebrow">Mobile app information</p>
-          <h1 id="page-title">Privacy that matches the app today.</h1>
-          <p class="intro">
-            This page describes Delta Pi Hub version 0.1.3, currently prepared
-            for internal testing with local sample data.
-          </p>
-          <p class="updated">Effective July 6, 2026</p>
+          <div class="hero-copy-grid">
+            <div>
+              <p class="eyebrow">Delta Pi Hub · Internal preview</p>
+              <h1 id="page-title">Your chapter, together in one place.</h1>
+              <p class="intro">
+                A reconstructed community hub for announcements, events and
+                RSVPs, chapter chat, media, member discovery, and role-based
+                leadership tools. Version 0.1.3 currently uses fictional,
+                on-device sample data for internal testing.
+              </p>
+              <div class="hero-actions">
+                <a class="hero-primary" href="#gallery">Explore the preview</a>
+                <a class="hero-secondary" href="#privacy">Read the privacy policy</a>
+              </div>
+              <div class="status-row" aria-label="Current app status">
+                <span>iOS TestFlight</span>
+                <span>Android closed testing</span>
+                <span>Local demo data</span>
+              </div>
+            </div>
+            <figure class="hero-device" id="gallery">
+              <img src="assets/delta-pi/01-home.png" alt="Delta Pi Hub home dashboard showing fictional internal preview content">
+              <figcaption>Internal preview · fictional local content</figcaption>
+            </figure>
+          </div>
         </section>
       </header>
 
       <div class="content-shell">
+        <section class="product-story" aria-labelledby="story-title">
+          <div class="section-heading-row">
+            <div>
+              <p class="section-label">Inside the preview</p>
+              <h2 id="story-title">The day-to-day chapter tools, in one calm view.</h2>
+            </div>
+            <p class="section-summary">
+              Review announcements, coordinate events and RSVPs, keep up with
+              chapter conversation, share approved media, and find members.
+              Leadership views remain role-gated in the internal demo.
+            </p>
+          </div>
+
+          <div class="screenshot-gallery" aria-label="Delta Pi Hub internal preview screenshots">
+            <figure>
+              <img src="assets/delta-pi/02-news.png" alt="Delta Pi Hub announcements preview with fictional content">
+              <figcaption>Announcements</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/delta-pi/03-events.png" alt="Delta Pi Hub event and RSVP preview with fictional content">
+              <figcaption>Events &amp; RSVPs</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/delta-pi/04-chat.png" alt="Delta Pi Hub chapter chat preview with fictional content">
+              <figcaption>Chapter chat</figcaption>
+            </figure>
+          </div>
+
+          <p class="demo-disclosure">
+            These images show the internal engineering preview with fictional,
+            local-only content. They are not claims of a live member service.
+          </p>
+        </section>
+
         <section id="privacy" aria-labelledby="privacy-title" tabindex="-1">
           <p class="section-label">Privacy policy</p>
-          <h2 id="privacy-title">Your current data stays on your device.</h2>
+          <h2 id="privacy-title">The current demo does not send data to us.</h2>
+          <p class="policy-effective">
+            Effective 6 July 2026 · Developer: Javonn Liner ·
+            <a href="mailto:javonn19@gmail.com">javonn19@gmail.com</a>
+          </p>
 
           <div class="card-grid">
             <article class="info-card">
@@ -103,18 +162,39 @@
                 Signing out does not erase local sample content. Use
                 <strong>Reset Local Demo Data</strong> inside the app to remove
                 the reconstructed state and copied test media, or remove the app
-                to delete its local container.
+                to delete its local container. Android system backup may retain
+                a device backup when backup is enabled in your Google account.
               </p>
             </article>
 
             <article>
-              <p class="detail-kicker">Apple and external services</p>
+              <p class="detail-kicker">Device and external services</p>
               <h3>System features act only when you choose them</h3>
               <p>
-                iOS handles notification permission and local reminders. If you
-                open Maps, an external website, or the system share sheet, the
-                service you select processes that interaction under its own
-                privacy terms.
+                iOS or Android handles notification permission and local
+                reminders. If you open Maps, an external website, or the system
+                share sheet, the service you select processes that interaction
+                under its own privacy terms.
+              </p>
+            </article>
+
+            <article>
+              <p class="detail-kicker">Audience and children</p>
+              <h3>For adult internal testers</h3>
+              <p>
+                The current demo is intended for adult chapter testers. It is
+                not directed to children and does not knowingly collect
+                children&apos;s personal information.
+              </p>
+            </article>
+
+            <article>
+              <p class="detail-kicker">Security and policy changes</p>
+              <h3>Protected by your device</h3>
+              <p>
+                Local demo data is protected by your device and operating-system
+                controls. We will revise this policy before enabling any server
+                service and will post a new effective date on this page.
               </p>
             </article>
           </div>
@@ -135,8 +215,8 @@
             <h2 id="support-title">Need help with Delta Pi Hub?</h2>
             <p>
               Contact the Delta Pi Chapter through its official support page.
-              Include your device model, iOS version, and the screen where the
-              issue occurred.
+              Include your device model, operating-system version, and the
+              screen where the issue occurred.
             </p>
             <p class="support-email">
               App review contact:
@@ -147,11 +227,58 @@
             Contact support <span aria-hidden="true">↗</span>
           </a>
         </section>
+
+        <section class="projects-section" id="projects" aria-labelledby="projects-title">
+          <p class="section-label">More from Javonn Liner</p>
+          <h2 id="projects-title">Apps, games, and works in progress.</h2>
+          <div class="project-grid">
+            <article class="project-card fitness-card">
+              <img class="project-icon" src="assets/fitness/icon.png" alt="Fitness Readiness Guide app icon">
+              <div>
+                <span class="project-status">Mobile app · Offline</span>
+                <h3>Fitness Readiness Guide</h3>
+                <p>
+                  An unofficial PFRA preparation aid with offline scoring,
+                  exercise guidance, HAMR practice, and official-source links.
+                </p>
+                <a href="https://javonn13.github.io/fitness-readiness-guide-privacy/">
+                  Privacy &amp; support <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card gardenbound-card">
+              <img class="project-wide-image" src="assets/gardenbound/capsule.png" alt="Gardenbound: Ten Terraces key art">
+              <div>
+                <span class="project-status">Game · In development</span>
+                <h3>Gardenbound: Ten Terraces</h3>
+                <p>
+                  A party-building garden RPG about restoring ten magical
+                  terraces through tactical battles, puzzles, and Seedkin bonds.
+                </p>
+                <span class="quiet-link">No public release date announced</span>
+              </div>
+            </article>
+
+            <article class="project-card moonpetal-card">
+              <img class="project-icon pixel-icon" src="assets/moonpetal/icon.png" alt="Moonpetal Garden prototype icon">
+              <div>
+                <span class="project-status">Game lab · Prototype</span>
+                <h3>Moonpetal Garden</h3>
+                <p>
+                  A compact RPG Maker garden prototype exploring a cozy,
+                  one-map care and discovery loop.
+                </p>
+                <span class="quiet-link">Development archive</span>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
     </main>
 
     <footer>
-      <span>Delta Pi Hub · Version 0.1.3</span>
+      <span>Delta Pi Hub · Version 0.1.3 · iOS &amp; Android preview</span>
       <a href="https://deltapi736.org/">Delta Pi Chapter #736</a>
     </footer>
   </body>

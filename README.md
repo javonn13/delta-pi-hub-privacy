@@ -1,14 +1,18 @@
-# Delta Pi Hub Privacy & Support
+# Delta Pi Hub App Page, Privacy & Support
 
-This directory is a dependency-free, GitHub Pages-compatible mirror of the
-Delta Pi Hub privacy and support site. Publish the contents of this directory
-at the repository root.
+This directory is a dependency-free, GitHub Pages-compatible app page for
+Delta Pi Hub. It combines a factual internal-preview description, real app
+artwork and screenshots, the current privacy policy, support details, and
+links to related projects. Publish the contents of this directory at the
+repository root.
 
 ## Files
 
-- `index.html` — complete privacy and support page
+- `index.html` — complete app, preview, privacy, support, and projects page
 - `styles.css` — responsive, accessible, and print-friendly styling
-- `favicon.svg` — Delta Pi Hub browser icon
+- `favicon.png` — Delta Pi Hub browser icon
+- `apple-touch-icon.png` — iOS bookmark icon
+- `assets/` — verified app and game artwork used by the page
 - `.nojekyll` — serves files directly through GitHub Pages
 
 The disclosures describe the version 0.1.3 internal demo. Review and update the

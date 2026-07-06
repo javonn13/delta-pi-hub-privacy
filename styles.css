@@ -83,15 +83,12 @@ footer {
   font-weight: 700;
 }
 
-.brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 50%;
-  color: var(--gold);
-  font-family: Georgia, serif;
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+  box-shadow: 0 12px 34px rgba(11, 4, 28, 0.3);
 }
 
 .nav-links a {
@@ -99,7 +96,14 @@ footer {
 }
 
 .hero-copy {
-  padding: 96px 0 88px;
+  padding: 72px 0 88px;
+}
+
+.hero-copy-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.55fr);
+  gap: clamp(48px, 8vw, 104px);
+  align-items: center;
 }
 
 .eyebrow,
@@ -136,8 +140,127 @@ h1 {
   font-size: 0.92rem;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.hero-primary,
+.hero-secondary {
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.hero-primary {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: #24143f;
+}
+
+.hero-secondary {
+  color: white;
+}
+
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.status-row span {
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.8rem;
+}
+
+.hero-device {
+  width: min(100%, 330px);
+  margin: 0 auto;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 38px;
+  background: rgba(12, 5, 31, 0.55);
+  box-shadow: 0 34px 80px rgba(13, 4, 36, 0.48);
+}
+
+.hero-device img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+}
+
+.hero-device figcaption {
+  padding: 12px 6px 2px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
 .content-shell {
   padding-block: 88px;
+}
+
+.product-story {
+  padding-bottom: 96px;
+}
+
+.section-heading-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.65fr);
+  gap: 48px;
+  align-items: end;
+}
+
+.section-summary,
+.demo-disclosure {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 46px;
+}
+
+.screenshot-gallery figure {
+  margin: 0;
+  padding: 10px 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: white;
+  box-shadow: 0 24px 60px rgba(34, 25, 52, 0.1);
+}
+
+.screenshot-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.screenshot-gallery figcaption {
+  padding: 14px 8px 2px;
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.demo-disclosure {
+  max-width: 760px;
+  margin-top: 22px;
+  font-size: 0.9rem;
 }
 
 .content-shell h2 {
@@ -148,6 +271,19 @@ h1 {
   font-weight: 500;
   letter-spacing: -0.035em;
   line-height: 1.05;
+}
+
+.policy-effective {
+  margin: -20px 0 34px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.policy-effective a {
+  color: var(--purple);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .card-grid {
@@ -292,6 +428,80 @@ footer a {
   text-decoration: none;
 }
 
+.projects-section {
+  padding-top: 96px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: white;
+}
+
+.project-card > div {
+  padding: 30px;
+}
+
+.project-card h3 {
+  margin: 8px 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.project-card p {
+  margin: 0 0 22px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-card a,
+.quiet-link {
+  color: var(--purple);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.project-status {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.project-icon {
+  display: block;
+  width: 112px;
+  height: 112px;
+  margin: 30px 30px 0;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.project-wide-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.gardenbound-card {
+  grid-column: span 2;
+}
+
+.pixel-icon {
+  image-rendering: pixelated;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -308,12 +518,38 @@ footer {
   }
 
   .nav-links {
+    width: 100%;
     gap: 12px;
     font-size: 0.9rem;
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+
+  .nav-shell {
+    flex-wrap: wrap;
+    gap: 18px;
   }
 
   .hero-copy {
     padding-block: 76px;
+  }
+
+  .hero-copy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-device {
+    width: min(100%, 300px);
+  }
+
+  .section-heading-row,
+  .screenshot-gallery,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gardenbound-card {
+    grid-column: auto;
   }
 
   .card-grid {
@@ -339,7 +575,10 @@ footer {
     padding: 32px;
   }
 
-  .policy-details,
+  .policy-details {
+    grid-template-columns: 1fr;
+  }
+
   .future-notice {
     grid-template-columns: 1fr;
   }
@@ -350,48 +589,6 @@ footer {
 
   footer {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 460px) {
-  .nav-shell,
-  .hero-copy,
-  .content-shell,
-  footer {
-    width: min(100% - 28px, 1120px);
-  }
-
-  .brand {
-    gap: 10px;
-    font-size: 0.95rem;
-  }
-
-  .brand-mark {
-    width: 38px;
-    height: 38px;
-  }
-
-  .nav-links {
-    gap: 10px;
-    font-size: 0.84rem;
-  }
-
-  h1 {
-    font-size: clamp(2.75rem, 15vw, 4rem);
-  }
-
-  .intro {
-    font-size: 1.08rem;
-  }
-
-  .content-shell {
-    padding-block: 64px;
-  }
-
-  .policy-details article,
-  .future-notice,
-  .support-panel {
-    padding: 26px;
   }
 }
 
@@ -424,12 +621,5 @@ footer {
 
   .content-shell {
     padding-block: 32px;
-  }
-
-  .info-card,
-  .policy-details article,
-  .future-notice,
-  .support-panel {
-    break-inside: avoid;
   }
 }
