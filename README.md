@@ -15,6 +15,7 @@ repository root.
 - `assets/` — verified app and game artwork used by the page
 - `.nojekyll` — serves files directly through GitHub Pages
 
-The disclosures describe the version 0.1.3 internal demo. Review and update the
-policy before enabling production accounts, cloud sharing, remote notifications,
-server-backed moderation, analytics, crash reporting, or other remote services.
+The disclosures describe the iOS 0.1.3 internal demo and prepared Android 0.1.4
+update. Review and update the policy before enabling production accounts,
+cloud sharing, remote notifications, server-backed moderation, analytics,
+crash reporting, or other remote services.
