@@ -2,13 +2,13 @@
 
 This directory is a dependency-free, GitHub Pages-compatible app page for
 Delta Pi Hub. It combines a factual public-release description, real app
-artwork and iOS screenshots, the current privacy policy, support details, and
-links to related projects. Publish the contents of this directory at the
-repository root.
+artwork and iOS screenshots, the current privacy policy, account-deletion
+instructions, support details, and links to related projects. Publish the
+contents of this directory at the repository root.
 
 ## Files
 
-- `index.html` — complete app, preview, privacy, support, and projects page
+- `index.html` — complete app, preview, privacy, account deletion, support, and projects page
 - `styles.css` — responsive, accessible, and print-friendly styling
 - `favicon.png` — Delta Pi Hub browser icon
 - `apple-touch-icon.png` — iOS bookmark icon
