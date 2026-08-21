@@ -2,9 +2,9 @@
 
 This directory is a dependency-free, GitHub Pages-compatible app page for
 Delta Pi Hub. It combines a factual public-release description, real app
-artwork and iOS screenshots, the current privacy policy, account-deletion
-instructions, support details, and links to related projects. Publish the
-contents of this directory at the repository root.
+artwork and iOS screenshots, the current iOS and Android privacy policy,
+account-deletion instructions, support details, and links to related projects.
+Publish the contents of this directory at the repository root.
 
 ## Files
 
