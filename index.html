@@ -36,22 +36,23 @@
         <section class="hero-copy" id="top" aria-labelledby="page-title">
           <div class="hero-copy-grid">
             <div>
-              <p class="eyebrow">Delta Pi Hub · On-device chapter workspace</p>
+              <p class="eyebrow">Delta Pi Hub · Secure chapter workspace</p>
               <h1 id="page-title">Your chapter, together in one place.</h1>
               <p class="intro">
                 A self-contained community hub for announcements, events and
                 RSVPs, chapter conversations, media, member discovery, and
-                role-based leadership tools. The current iOS 0.1.4 build uses
-                fictional sample data and keeps workspace changes on your device.
+                role-based leadership tools. The production account edition uses
+                approved member access and an encrypted AWS workspace. The older
+                iOS 0.1.4 preview remains a fictional, on-device demonstration.
               </p>
               <div class="hero-actions">
                 <a class="hero-primary" href="#gallery">Explore the preview</a>
                 <a class="hero-secondary" href="#privacy">Read the privacy policy</a>
               </div>
               <div class="status-row" aria-label="Current app status">
-                <span>iOS 0.1.4</span>
-                <span>iPhone &amp; iPad</span>
-                <span>Fictional on-device data</span>
+                <span>iOS &amp; Android</span>
+                <span>Approved accounts</span>
+                <span>AWS-backed workspace</span>
               </div>
             </div>
             <figure class="hero-device" id="gallery">
@@ -108,20 +109,21 @@
 
         <section id="privacy" aria-labelledby="privacy-title" tabindex="-1">
           <p class="section-label">Privacy policy</p>
-          <h2 id="privacy-title">The current iOS and Android apps do not send data to us.</h2>
+          <h2 id="privacy-title">How the production account edition handles your data.</h2>
           <p class="policy-effective">
-            Effective 20 August 2026 · Developer: Javonn Liner ·
+            Effective 13 September 2026 · Developer: Javonn Liner ·
             <a href="mailto:javonn19@gmail.com">javonn19@gmail.com</a>
           </p>
 
           <div class="card-grid">
             <article class="info-card">
               <span class="card-number" aria-hidden="true">01</span>
-              <h3>No cloud account service</h3>
+              <h3>Approved AWS accounts</h3>
               <p>
-                The current iOS and Android on-device editions do not send
-                profiles, messages, events, reports, or media to a Delta Pi Hub
-                server.
+                The production edition sends a username, user ID, verified email,
+                full name, optional phone number, profile fields, and membership
+                status to AWS so the Super Admin can approve access and operate the
+                member directory.
               </p>
             </article>
 
@@ -130,53 +132,61 @@
               <h3>No tracking or advertising</h3>
               <p>
                 The app contains no advertising, cross-app tracking, analytics,
-                cloud AI, or remote push-token registration.
+                crash-reporting SDK, or remote push-token registration. The
+                assistant does not use a third-party model or Amazon Bedrock.
               </p>
             </article>
 
             <article class="info-card">
               <span class="card-number" aria-hidden="true">03</span>
-              <h3>Local photos and reminders</h3>
+              <h3>Private member workspace</h3>
               <p>
-                Selected photos are copied into app storage. Event reminders are
-                scheduled locally after notification permission is granted.
+                Announcements, comments, reactions, events, RSVPs, check-ins, chats,
+                reports, profiles, and approved photos or videos are stored in
+                encrypted AWS services and returned only to approved accounts.
+                Event reminders remain on the device.
               </p>
             </article>
           </div>
 
           <div class="policy-details">
             <article>
-              <p class="detail-kicker">Information stored locally</p>
-              <h3>Sample activity and your selected media</h3>
+              <p class="detail-kicker">Information processed in AWS</p>
+              <h3>Account and chapter workspace data</h3>
               <ul>
-                <li>The selected sample profile and local session state</li>
-                <li>On-device announcements, events, chats, reports, and preferences</li>
-                <li>Photos you choose for local media or a sample profile</li>
-                <li>Locally scheduled event-reminder information</li>
+                <li>Username, user ID, verified email, full name, approval status, and role</li>
+                <li>Optional directory fields such as phone number, bio, and graduation year</li>
+                <li>Announcements, comments, reactions, events, RSVPs, and check-ins</li>
+                <li>Chat threads and messages, assistant questions, moderation reports, and approved photos or videos</li>
               </ul>
+              <p>
+                We use this information only for app functionality: authentication,
+                account approval, the member directory, chapter collaboration,
+                moderation, media delivery, and member-requested assistant answers.
+                We do not sell this information or use it for advertising or tracking.
+              </p>
             </article>
 
             <article>
-              <p class="detail-kicker">Information not collected</p>
-              <h3>No developer-side tracking or profiling</h3>
+              <p class="detail-kicker">Information not retained by the app</p>
+              <h3>No passwords, payment data, or tracking</h3>
               <ul>
-                <li>No advertising identifiers or cross-app tracking</li>
-                <li>No analytics, crash-reporting, or diagnostic service</li>
-                <li>No cloud AI prompts, account database, or media upload</li>
-                <li>No remote notification token registration</li>
+                <li>Passwords and authenticator secrets are handled by AWS Cognito and are not visible to chapter administrators</li>
+                <li>No Cash App, Venmo, bank-card, or other payment credentials</li>
+                <li>No advertising identifiers, cross-app tracking, analytics, or crash-reporting service</li>
+                <li>Assistant questions are processed transiently in AWS Lambda to return an answer and are not stored as assistant history by the service</li>
               </ul>
             </article>
 
             <article>
               <p class="detail-kicker">Retention and deletion</p>
-              <h3>You control the current local copy</h3>
+              <h3>Delete from the app</h3>
               <p>
-                Switching roles does not erase local sample content. Use
-                <strong>Reset Workspace Data</strong> inside the app to remove
-                workspace changes and copied media, or remove the app to delete
-                its local container. On Android, Google&apos;s system backup may
-                retain a device backup when backup is enabled in your Google
-                Account. An iOS device backup may likewise retain app data.
+                Use <strong>Profile → Delete Account</strong> to remove the Cognito
+                login, approval record, profile, member activity authored by that
+                account, and uploaded media. A minimal pseudonymous security audit
+                record may be retained to protect the service. Device backups may
+                separately retain local app settings under Apple or Google policies.
               </p>
             </article>
 
@@ -184,10 +194,11 @@
               <p class="detail-kicker">Device and external services</p>
               <h3>System features act only when you choose them</h3>
               <p>
-                iOS or Android handles notification permission and local
-                reminders. If you open Maps, an external website, or the system
-                share sheet, the service you select processes that interaction
-                under its own privacy terms.
+                iOS or Android handles notification permission and local reminders.
+                Maps, Zoom, GroupMe, Cash App, Venmo, public chapter links, and the
+                system share sheet open only when you choose them. Those third-party
+                services process the interaction under their own privacy terms; Delta
+                Pi Hub does not receive your payment credentials or transaction result.
               </p>
             </article>
 
@@ -195,30 +206,33 @@
               <p class="detail-kicker">Audience and children</p>
               <h3>For adult users</h3>
               <p>
-                The current app is intended for adults exploring a fictional
-                chapter workspace. It is not directed to children and does not
-                knowingly collect children&apos;s personal information.
+                Delta Pi Hub is intended for adult chapter members and authorized
+                testers. It is not directed to children and does not knowingly
+                collect children&apos;s personal information.
               </p>
             </article>
 
             <article>
               <p class="detail-kicker">Security and policy changes</p>
-              <h3>Protected by your device</h3>
+              <h3>Encrypted and role-gated</h3>
               <p>
-                Local workspace data is protected by your device and operating-system
-                controls. We will revise this policy before enabling any server
-                service and will post a new effective date on this page.
+                Sessions are stored with platform secure storage. AWS encrypts the
+                DynamoDB workspace and private S3 media bucket at rest. Cognito
+                access tokens, approval checks, server authorization, and required
+                Super Admin authenticator protection restrict access. AWS acts as
+                the cloud service provider for authentication, application processing,
+                database storage, private media storage, and short-lived service logs.
               </p>
             </article>
           </div>
 
           <aside class="future-notice" aria-label="Future service notice">
-            <span>Production services</span>
+            <span>Release-specific behavior</span>
             <p>
-              Production accounts, cloud sharing, remote notifications, and
-              server-backed moderation are not enabled in the current iOS or
-              Android app.
-              This policy will be updated before any of those services are released.
+              The iOS 0.1.4 screenshots on this page show the earlier fictional,
+              on-device build. That build does not transmit workspace content.
+              The newer production account edition uses the AWS processing and
+              retention practices described above.
             </p>
           </aside>
         </section>
@@ -228,20 +242,18 @@
             <p class="section-label">Account deletion</p>
             <h2 id="delete-account-title">Delete your Delta Pi Hub account.</h2>
             <p>
-              The current iOS and Android on-device editions do not create an
-              online account. On either platform, use
-              <strong>Reset Workspace Data</strong> in the app, or uninstall the
-              app, to delete its local data. Android system backup may retain a
-              device backup when enabled in your Google Account.
+              In the production account edition on iOS or Android, sign in, open
+              <strong>Profile</strong> or <strong>Account Status</strong>, choose
+              <strong>Delete Account</strong>, and confirm.
             </p>
             <p>
-              In a production account edition on iOS or Android, sign in, open
-              <strong>Profile</strong> or <strong>Account Status</strong>, choose
-              <strong>Delete Account</strong>, and confirm. This option is
-              available to approved, pending, and rejected accounts. It removes
-              the Cognito login and membership request; a minimal pseudonymous
+              This option is available to approved, pending, and rejected accounts.
+              It removes the Cognito login and membership request. For an approved
+              account, it also removes the AWS directory profile, member activity
+              authored by the account, and uploaded media. A minimal pseudonymous
               security audit event may be retained under the chapter&apos;s approved
-              retention policy.
+              retention policy. The older on-device demo uses
+              <strong>Reset Workspace Data</strong> instead.
             </p>
             <p class="support-email">
               If you cannot access the app, request deletion from the email

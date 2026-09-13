@@ -15,7 +15,9 @@ Publish the contents of this directory at the repository root.
 - `assets/` — verified app and game artwork used by the page
 - `.nojekyll` — serves files directly through GitHub Pages
 
-The disclosures describe the self-contained iOS 0.1.4 on-device edition.
-Review and update the policy before enabling production accounts,
-cloud sharing, remote notifications, server-backed moderation, analytics,
-crash reporting, or other remote services.
+The disclosures distinguish the self-contained iOS 0.1.4 preview from the
+AWS-backed production account edition. The production disclosure covers account
+contact information, identifiers, chapter user content, AWS processing, deletion,
+and local-only reminders. Re-review the policy and store privacy answers before
+enabling analytics, crash reporting, remote notifications, a model-based AI
+provider, in-app payments, or another remote service.
